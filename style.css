@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(45deg, #fbf8f8, hsl(210, 50%, 99%)); */
+    background: linear-gradient(45deg, hwb(0 0% 100%), hsl(0, 0%, 0%));
+}
+
+.display-calculator {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+.display-calculator .heading{
+    text-align: center;
+}
+
+.display-calculator input {
+    width: 100%;
+    padding: 15px;
+    text-align: right;
+    background: transparent;
+    border-radius: 16px;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+    font-size: 40px;
+    color: #000;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.display-calculator input::placeholder {
+    color: #999;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 5px);
+    /* grid-row-gap: 20px; */
+    grid-column-gap: 30px;
+}
+
+button {
+    width: 100%;
+    height: 60px;
+    border-radius: 10px; /* Adjusted border radius */
+    font-size: 24px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7); /* Darkened button background */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Added transition effect */
+    
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darkened button background on hover */
+}
+
+.eql-Btn {
+    grid-column: span 2;
+}
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px; /* Adjust the gap between columns */
+    grid-row-gap: 5px; /* Adjust the gap between rows */
+}
+
+button {
+    width: 100%;
+    height: 60px;
+    border-radius: 50px; /* Adjusted border radius */
+    font-size: 24px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7); /* Darkened button background */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Added transition effect */
+    
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darkened button background on hover */
+    
+}
+
+.eql-Btn {
+    grid-column: span 2;
+    background-color: #ff9500;
+}
+.display-calculator input {
+    width: 100%;
+    padding: 15px;
+    text-align: right;
+    background: transparent;
+    border-radius: 16px;
+    box-shadow: inset 0px 3px 15px rgba(113, 115, 119, 0.5); /* Added inset shadow */
+    font-size: 40px;
+    color: #000;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.display-calculator input::placeholder {
+    color: #999;
+}
